@@ -25,6 +25,7 @@ int main(){
     printf("    \\____|\\__,_|\\___||___/___/_|_| |_|\\__, |  \\____|\\__,_|_| |_| |_|\\___|    \n");
     printf("                                      |___/                                         \n");
     printf("                                                                                    \n");
+    printf("                            Guess the secret number                               \n");
     printf("=============================================================================   \n\n\n");
 
     printf("Choose the level: ");
@@ -67,7 +68,7 @@ int main(){
 
         if (right) {
             break;
-        } else if (chances < 5) {
+        } else if (chances < numberOfAttempts) {
             if (guess < secretNumber) {
                 printf("The secret number is greater than %d.\n", guess);
             } else {
